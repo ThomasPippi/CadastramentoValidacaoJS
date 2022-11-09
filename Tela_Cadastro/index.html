@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="config.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="bonitao.css">
+    <title>Exercicio 9</title>
+</head>
+<body>
+    <h2>Cadastramento</h2>
+    <div class="autenticacao" onkeypress="verificando()">
+        <label for="usuario">Digite o seu Usuário:</label>
+        <input type="text" name="usuario" id="usuario" placeholder="Ex: thomas.pippi" onchange="verificando()">
+        <label for="senha">Digite sua Senha:</label>
+        <input type="password" name="senha" id="senha" placeholder="Senha aqui..." onchange="verificando()">
+        <label for="confirmaSenha">Confirme sua Senha:</label>
+        <input type="password" name="confirmaSenha" id="confirmaSenha" placeholder="Não vai se esquecer de mim, tá?" onchange="verificando()">
+        <ul>
+            <li id="confere_campos" class="naoconferido">Preencha todos os campos</li>
+            <li id="confere_senha" class="naoconferido">Sua senha deve ter entre 6 e 10 caracteres.</li>
+            <li id="confere_senhasenha" class="naoconferido">A senha e a confirmação da senha devem ser iguais.</li>
+        </ul>
+        <button onclick="cadastradoSucesso()" id="verificado" disabled>Cadastrar</button>
+    </div>
+</body>
+</html>

@@ -1,0 +1,79 @@
+body{
+    background-color: #5589c4;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+h2{
+    font-weight: 500;
+    color: white;
+    font-size: 3rem;
+}
+.autenticacao{
+    font-weight: 500;
+    color: white;
+    font-size: 1.7rem;
+    display: flex;
+    flex-direction: column;
+}
+input{
+    width: 20%;
+    margin: auto;
+    margin-top: 1rem;
+    outline: none;
+    border: none;
+    padding: .5rem;
+    font-weight: 100;
+    border-radius: 15px;
+}
+label{
+    margin-top: 1rem;
+}
+button{
+    margin-top: 2rem;
+    width: 25%;
+    align-self: center;
+    padding: 1rem;
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: white;
+    background-color: transparent;
+    border: 1px solid white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+button:hover{
+    background-color: white;
+    color: #5589c4;
+    transition: .5s;
+}
+button:disabled{
+    margin-top: 2rem;
+    width: 25%;
+    align-self: center;
+    padding: 1rem;
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: white;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 5px;
+    cursor: auto;
+    opacity: 80%;
+}
+
+ul{
+    margin: auto;
+    margin-top: 1rem;
+    font-size: .8rem;
+    text-align: left;
+}
+
+li.naoconferido{
+    font-style: italic;
+    opacity: 60%;
+}
+
+li.conferido{
+    font-style: italic;
+    color: greenyellow;
+}
